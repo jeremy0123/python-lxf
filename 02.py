@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# 逗号表示空格
 print 'the quick brown fox', 'jumps over', 'the lazy dog'
 print 300
 print 100 + 200
