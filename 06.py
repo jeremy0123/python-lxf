@@ -37,3 +37,17 @@ p = ['asp', 'php']
 s = ['python', 'java', p, 'scheme']
 print s[2][1] # php
 print len([])
+
+# tuple 元祖 一旦初始化就不能修改
+classmates = ('Machael', 'Bob', 'Tracy')
+print classmates
+
+# tuple 定义一个元素时，不能携程(1)，而应该写成(1, )
+print (1)
+print (1, )
+
+# 理解tuple为什么不变以及指向的关系
+t = ('a', 'b', ['A', 'B'])
+t[2][0] = 'X' # t[2]指向没变，但是t[2][0]的指向变了
+t[2][1] = 'Y'
+print t
