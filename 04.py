@@ -15,11 +15,10 @@ print not False
 
 age = 19
 if age < 18:    print 'Not Adult'
+if age == 18:
+    print '18'
 else:
-    if age == 18:
-        print '18'
-    else:
-        print 'Adult'
+    print 'Adult'
 
 #None 类似于null
 print None
