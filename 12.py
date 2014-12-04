@@ -70,6 +70,7 @@ def tail_call_optimized(g):
           kwargs = e.kwargs
   func.__doc__ = g.__doc__
   return func
+# ------------------------------------------------------------------------------
 
 def fact(n):
     return fact_iter(1, 1, n)

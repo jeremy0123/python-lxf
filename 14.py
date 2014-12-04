@@ -25,6 +25,6 @@ print isinstance('abc', Iterable)
 print isinstance([1, 2, 3], Iterable)
 print isinstance(123, Iterable)
 
-# 下标循环 enumerate吧list变成索引-元素对
+# 下标循环 enumerate把list变成索引-元素对
 for i, value in enumerate(['A', 'B', 'C']):
     print i, value

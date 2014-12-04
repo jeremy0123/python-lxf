@@ -64,7 +64,7 @@ def cmp_ignore_case(s1, s2):
 print sorted(['about', 'bob', 'Zoo', 'Credit'], cmp_ignore_case)
 
 # 函数作为返回值 闭包Closure：相关参数和变量都保存在返回的函数中
-def lazy_sum(*args):
+def lazy_sum(*args): # 不需要立刻求和，而是在后面的代码中，根据需要再计算
     def sum():
         ax = 0
         for n in args:

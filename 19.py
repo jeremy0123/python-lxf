@@ -64,7 +64,7 @@ def log(text):
         def wrapper(*args, **kw):
             print '%s %s():' % (text, func.__name__)
             return func(*args, **kw)
-        #wrapper.__name__ = func.__name__
+        #wrapper.__name__ = func.__name__ # 替换@functools.wraps(func)
         return wrapper
     return decorator
 

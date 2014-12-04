@@ -14,6 +14,6 @@ print L[10:20]
 print L[-10:]
 print L[:10:2] # 前10个数，每2个取一个
 print L[::5] # 所有数，每5个取一个
-print L[:]
+print L[:] # 取所有的数
 
 # tuple 和 string 都可以看做list，进行切片操作
