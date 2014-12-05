@@ -12,7 +12,7 @@ class Student(object):
 
 bart = Student('Bart Simpson', 59)
 #print bart.__name # Error
-print bart._Student__name #可以通过_Student__name来访问__name变量：
+print bart._Student__name # 可以通过_Student__name来访问__name变量，但是不推荐使用
 bart.print_score()
 
 # 变量名类似__xxx__的，也就是以双下划线开头，并且以双下划线结尾的，是特殊变量，

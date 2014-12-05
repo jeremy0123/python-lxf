@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+
+# 继承&多态
 class Animal(object):
     def run(self):
         print 'Animal is running'

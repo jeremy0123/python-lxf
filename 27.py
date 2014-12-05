@@ -5,7 +5,7 @@ def hello():
     print 'hello world'
 
 print type(hello)
-# print isinstance(hello, func)
+# print isinstance(hello, func) # 语法错误
 print hasattr(hello, '__call__') # 注意判断一个obj是否是一个函数
 
 print type(123)
