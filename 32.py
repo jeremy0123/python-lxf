@@ -28,7 +28,9 @@ print '-------------------------------------------------------------------------
 class ListMetaclass(type): # metaclass是创建类，所以必须从`type`类型派生
     def __new__(cls, name, bases, attrs):
         attrs['add'] = lambda self, value: self.append(value)
-        return type.__new__(cls, name, bases, attrs)
+        # return type.__new__(cls, name, bases, attrs)
+        return super(ListMetaclass, cls).__new__(cls, name, bases, attrs) # 也可以用这种方式
+
 
 class MyList(list):
     __metaclass__ = ListMetaclass
