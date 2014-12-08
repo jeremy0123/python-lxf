@@ -11,6 +11,7 @@ print type(h) # <class 'Test.Hello'>
 def fn(self, name='world'): # 先定义函数
     print 'Hello, %s.' % name
 
+# type就是Python在背后用来创建所有类的元类
 Hello = type('A', (object, ), dict(hello=fn)) # 创建Hello class
 h = Hello()
 h.hello()
