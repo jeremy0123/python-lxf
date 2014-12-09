@@ -42,7 +42,7 @@ print len([])
 classmates = ('Machael', 'Bob', 'Tracy')
 print classmates
 
-# tuple 定义一个元素时，不能携程(1)，而应该写成(1, )
+# tuple 定义一个元素时，不能写成(1)，而应该写成(1, )
 print (1)
 print (1, )
 
