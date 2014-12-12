@@ -9,7 +9,7 @@ class Application(Frame):
         self.pack()
         self.createWidgets()
 
-    def createWidgets():
+    def createWidgets(self):
         self.nameInput = Entry(self)
         self.nameInput.pack()
         self.alertButton = Button(self, text='Hello', command=self.hello)
